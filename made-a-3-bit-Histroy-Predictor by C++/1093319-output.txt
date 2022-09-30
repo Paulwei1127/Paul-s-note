@@ -1,0 +1,776 @@
+entry?
+2
+
+addi R0,R0,0     0x0000      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R0,4     0x0004      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R1,R1,0     0x0008      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R1,R2,End     0x000c      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 010, WN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 010, WN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 101, WN SN WN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 010, WN SN WN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 010, WN SN WN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 101, WN SN WT SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 010, WN SN WT SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 010, WN SN WT SN SN SN SN SN )
+Outcome: T    Prediction: T >> correct
+
+
+beq R1,R2,End     0x000c      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 101, WN SN ST SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+
+C:\Users\paulw\Desktop\1093319-project2\x64\Debug\1093319-project2.exe (處理序 5824) 已結束，出現代碼 0。
+若要在偵錯停止時自動關閉主控台，請啟用 [工具] -> [選項] -> [偵錯] -> [偵錯停止時，自動關閉主控台]。
+按任意鍵關閉此視窗…
+
+
+
+
+
+entry?
+4
+
+addi R0,R0,0     0x0000      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R0,4     0x0004      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R1,R1,0     0x0008      entry: 2
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN WN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+
+C:\Users\paulw\Desktop\1093319-project2\x64\Debug\1093319-project2.exe (處理序 22792) 已結束，出現代碼 0。
+若要在偵錯停止時自動關閉主控台，請啟用 [工具] -> [選項] -> [偵錯] -> [偵錯停止時，自動關閉主控台]。
+按任意鍵關閉此視窗…
+
+
+
+
+entry?
+8
+
+addi R0,R0,0     0x0000      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R0,4     0x0004      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R1,R1,0     0x0008      entry: 2
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 4
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 5
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 4
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 5
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 4
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 5
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 4
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 5
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN WN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+
+C:\Users\paulw\Desktop\1093319-project2\x64\Debug\1093319-project2.exe (處理序 18000) 已結束，出現代碼 0。
+若要在偵錯停止時自動關閉主控台，請啟用 [工具] -> [選項] -> [偵錯] -> [偵錯停止時，自動關閉主控台]。
+按任意鍵關閉此視窗…
+
+
+
+entry?
+16
+
+addi R0,R0,0     0x0000      entry: 0
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R0,4     0x0004      entry: 1
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R1,R1,0     0x0008      entry: 2
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 4
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 5
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 4
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 5
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 001, WN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 4
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 5
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 011, WN WN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+addi R2,R2,-1     0x0010      entry: 4
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: N    Prediction: N >> correct
+
+
+beq R0,R0,Loop     0x0014      entry: 5
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+beq R1,R2,End     0x000c      entry: 3
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 111, WN WN SN WN SN SN SN WN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+ ( 000, SN SN SN SN SN SN SN SN )
+Outcome: T    Prediction: N >> miss
+
+
+
+C:\Users\paulw\Desktop\1093319-project2\x64\Debug\1093319-project2.exe (處理序 10384) 已結束，出現代碼 0。
+若要在偵錯停止時自動關閉主控台，請啟用 [工具] -> [選項] -> [偵錯] -> [偵錯停止時，自動關閉主控台]。
+按任意鍵關閉此視窗…

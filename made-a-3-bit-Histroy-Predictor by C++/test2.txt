@@ -1,0 +1,7 @@
+0x0000	addi	R0,R0,0
+0x0004	addi	R2,R0,4
+0x0008	addi	R1,R1,0
+0x000c 	Loop:	beq	R1,R2,End
+0x0010      	addi	R2,R2,-1
+0x0014		beq	R0,R0,Loop
+		End:		 
